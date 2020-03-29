@@ -1,0 +1,15 @@
+---
+title: Blog
+excerpt_separator: <!--more-->
+---
+<h1>Latest posts</h1>
+
+<ul>
+  {% for p in site.posts %}
+    <li>
+      <a href="{{ p.url }}">{{ p.title }}</a>
+      <p>{{ p.excerpt }}</p>
+    </li>
+    {% endfor %}
+</ul>
+
